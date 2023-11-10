@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Arvaj Saifi</title>
+        <link rel="shortcut icon" href="./images/favicon.ico"
+            type="image/x-icon">
+        <script src="./main.js" defer></script>
+    </head>
+    <body>
+        <div class="container disable" id="container">
+            <h1>Photo Editor</h1>
+            <hr>
+            <div class="view_img">
+                <img id="Image_Src" src="./one (2).png" alt>
+            </div>
+            <div class="choose_img">
+                <button id="Choose_Image">Choose Image <img
+                        src="./images/upload.png"
+                        alt></button>
+                <input type="file" id="Files" accept="image/*"
+                    hidden>
+            </div>
+            <div class="slider">
+                <div class="filter_info">
+                    <span class="filter_name" id="filter_name">BrightNess</span>
+                    <span class="filter_value" id="filter_value">100%</span>
+                </div>
+                <input type="range" id="Range" min="0" max="200" />
+            </div>
+            <div class="icons_filter">
+                <p>Filters</p>
+                <div class="icons_room" id="act">
+                    <button title="BrightNess" id="BrightNess" class="active"><img
+                            src="./images/brightnss.png" alt></button>
+                    <button title="Contrast" id="Contrast"><img
+                            src="./images/contrast.png" alt></button>
+                    <button title="Saturate" id="Saturate"><img
+                            src="./images/opactiy.png" alt></button>
+                    <button title="Invert" id="Invert"><img
+                            src="./images/invert.png" alt></button>
+                    <button title="Blur" id="Blur"><img src="./images/blur.png"
+                            alt></button>
+                </div>
+            </div>
+            <div class="icons_filter">
+                <p>Rotate & flip</p>
+                <div class="icons_room1">
+                    <button id="rotate_left" title="rotate_left"><img
+                            src="./images/rotateleft.png" alt></button>
+                    <button id="rotate_right" title="rotate_right"><img
+                            src="./images/rotateright.png" alt></button>
+                    <button id="flip_x" title="flip_x"><img
+                            src="./images/flip.png" alt></button>
+                    <button id="flip_y" title="flip_y"><img
+                            src="./images/flip.png" alt></button>
+                </div>
+            </div>
+            <div class="btn_contains">
+                <button id="reset" class="reset">Reset Filter</button>
+                <button id="save" class="save">Save Image</button>
+            </div>
+        </div>
+    </body>
+</html>
